@@ -47,7 +47,6 @@ class Menu:
         except ValueError:
             print("Error: Entrada inválida. Asegúrate de ingresar un número válido para el precio y la cantidad.")
 
-
     def mostrar_productos(self):
         print("---- Productos registrados en Supermercado -----")
         self.supermercado.mostrar_productos()

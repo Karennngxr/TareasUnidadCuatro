@@ -16,17 +16,10 @@ class Supermercado:
 
         for producto in self.lista_productos:
             print(producto.mostrar_detalles())
-
         
-        
-#def calcular_valor_total(self):
-#    return None
-#
-#def mostrar_detalles(self):
-#    return None
+        # Mostrar el valor total de todos los productos
+        print(f"Valor neto total de todos los productos: ${self.calcular_valor_total_productos():.2f}")
 
-
-
-    
-        
-        
+    def calcular_valor_total_productos(self) -> float:
+        valor_total = sum(producto.calcular_valor_total() for producto in self.lista_productos)
+        return valor_total        

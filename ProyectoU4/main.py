@@ -1,4 +1,7 @@
-from menu.menu import Menu
+import tkinter as tk
+from interfaz.interfaz_tkinter import SupermercadoApp
 
-menu = Menu ()
-menu.iniciar_menu()
+if __name__ == "__main__":
+    root = tk.Tk()  
+    app = SupermercadoApp(root)
+    root.mainloop()  
